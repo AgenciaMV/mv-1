@@ -1,0 +1,143 @@
+<!-- SLIDESHOW -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" style="background-image:url('https://material.angular.io/assets/img/examples/shiba2.jpg')"></div>
+        <div class="carousel-item" style="background-image:url('https://material.angular.io/assets/img/examples/shiba2.jpg')"></div>
+        <div class="carousel-item" style="background-image:url('https://material.angular.io/assets/img/examples/shiba2.jpg')"></div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- BUSCADOR -->
+
+<form class="form-inline my-2 my-lg-0 sticky-top-2">
+    <input class="form-control mr-sm-2 " type="search" placeholder="Cantón, Distrito, Artículo que busca..." aria-label="Search">
+    <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button> -->
+</form>
+
+
+<!-- <mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>Mall Virtual</span>
+        <span class="example-spacer"></span>
+        <mat-icon class="example-icon">favorite</mat-icon>
+        <mat-icon class="example-icon">delete</mat-icon>
+
+        <button mat-button [matMenuTriggerFor]="menu">
+		<mat-icon >view_headline</mat-icon>
+	</button>
+
+        <mat-menu #menu="matMenu" class="menu_home">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+    </mat-toolbar-row>
+
+</mat-toolbar> -->
+
+<!-- <mat-slide-toggle>Activar</mat-slide-toggle>
+<mat-checkbox>Premiun</mat-checkbox>
+ -->
+<!-- <mat-progress-bar mode="indeterminate"></mat-progress-bar> -->
+
+<!-- <form class="example-form">
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Favorite food" value="Sushi">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <textarea matInput placeholder="Leave a comment"></textarea>
+    </mat-form-field>
+</form> -->
+<mat-card class="example-card">
+
+    <h4>Mascota a la venta</h4>
+    <br>
+    <h5>Raza pura Shitori</h5>
+    <br>
+    <h5>85,000</h5>
+    <h6> Colones</h6>
+
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+        <p>
+            Esta hermosa mascota, tiene tan solo 6 meses y ya está, lista para su nueva casa, su nombre es Shiba y está en perfectas condiciones, posee todas las vacunas y está castrado.
+        </p>
+        <p>Vendedor: Celso Borges</p>
+        <p>Tel. 6060-2525</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button>Me gusta
+<mat-icon matBadge="230" matBadgeColor="warn"></mat-icon>
+        </button>
+        <button mat-button>Comprar</button>
+    </mat-card-actions>
+    <hr>
+</mat-card>
+
+<mat-card class="example-card">
+
+    <h4>Perro lobo miniatura</h4>
+    <br>
+    <h5>Raza pura Shitori</h5>
+    <br>
+    <h5>58,000</h5>
+    <h6> Colones</h6>
+
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+        <p>
+            Esta hermosa mascota, tiene tan solo 6 meses y ya está, lista para su nueva casa, su nombre es Shiba y está en perfectas condiciones, posee todas las vacunas y está castrado.
+        </p>
+        <p>Vendedor: Juan Solórzano Figueroa</p>
+        <p>Tel. 2530-6546</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button>Me gusta
+      <mat-icon matBadge="38" matBadgeColor="warn"></mat-icon>
+    </button>
+        <button mat-button>Comprar</button>
+    </mat-card-actions>
+    <hr>
+</mat-card>
+
+
+
+<!--
+<button mat-button>Abrir mensaje</button>
+
+<p>
+    <span matBadge="4" matBadgeOverlap="false">Text with a badge</span>
+</p>
+
+<p>
+    Button with a badge on the left
+    <button mat-raised-button color="primary" matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+    Action
+  </button>
+</p>
+
+<p>
+    Icon with a badge
+    <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+</p>
+
+<mat-form-field>
+    <mat-select placeholder="State">
+        <mat-option>None</mat-option>
+        <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+    </mat-select>
+</mat-form-field> -->
