@@ -20,33 +20,39 @@ import { DeportesComponent } from './components/deportes/deportes.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { HospedajeComponent } from './components/hospedaje/hospedaje.component';
 import { SaludComponent } from './components/salud/salud.component';
+import { RegistroComponent } from './components/registro/registro.component';
+import { LoginComponent } from './components/login/login.component';
+
+
 
 /* import { compileNgModuleFromRender2 } from '../../node_modules/@angular/compiler/src/render3/r3_module_compiler'; */
 
 
 
 const APP_ROUTES: Routes = [
-  {path: 'home', component: HomeComponent },
-  { path: 'perfil', component: PerfilComponent },
+  { path: 'home',         component: HomeComponent },
+  { path: 'perfil',       component: PerfilComponent },
   { path: 'notificacion', component: NotificacionComponent },
-  { path: 'respuesta', component: RespuestaComponent },
-  { path: 'nosotros', component: NosotrosComponent },
-  { path: 'mensaje', component: MensajeComponent },
-  { path: 'carros', component: CarrosComponent },
+  { path: 'respuesta',    component: RespuestaComponent },
+  { path: 'nosotros',     component: NosotrosComponent },
+  { path: 'mensaje',      component: MensajeComponent },
+  { path: 'carros',       component: CarrosComponent },
   { path: 'bienesRaices', component: BienesRaicesComponent },
   { path: 'otrosServicios', component: OtrosServiciosComponent },
-  { path: 'empleo', component: EmpleoComponent },
-  { path: 'pagina', component: PaginaComponent },
-  { path: 'tiendas', component: TiendasComponent },
+  { path: 'empleo',       component: EmpleoComponent },
+  { path: 'pagina',       component: PaginaComponent },
+  { path: 'tiendas',      component: TiendasComponent },
   { path: 'recreaciones', component: RecreacionesComponent },
   { path: 'comidasBebidas', component: ComidasBebidasComponent },
-  { path: 'transportes', component: TransportesComponent },
-  { path: 'profesiones', component: ProfesionesComponent },
+  { path: 'transportes',  component: TransportesComponent },
+  { path: 'profesiones',  component: ProfesionesComponent },
   { path: 'reparaciones', component: ReparacionesComponent },
-  { path: 'deportes', component: DeportesComponent },
-  { path: 'educacion', component: EducacionComponent },
-  { path: 'hospedaje', component: HospedajeComponent },
-  { path: 'salud', component: SaludComponent },
+  { path: 'deportes',     component: DeportesComponent },
+  { path: 'educacion',    component: EducacionComponent },
+  { path: 'hospedaje',    component: HospedajeComponent },
+  { path: 'salud',        component: SaludComponent },
+  { path: 'registro',     component: RegistroComponent },
+  { path: 'login',        component: LoginComponent },
   {path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
