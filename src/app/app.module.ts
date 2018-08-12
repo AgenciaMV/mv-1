@@ -36,6 +36,8 @@ import { DeportesComponent } from './components/deportes/deportes.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { HospedajeComponent } from './components/hospedaje/hospedaje.component';
 import { SaludComponent } from './components/salud/salud.component';
+import { RegistroComponent } from './components/registro/registro.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,9 @@ import { SaludComponent } from './components/salud/salud.component';
     DeportesComponent,
     EducacionComponent,
     HospedajeComponent,
-    SaludComponent
+    SaludComponent,
+    RegistroComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
