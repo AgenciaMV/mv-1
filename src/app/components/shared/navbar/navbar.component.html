@@ -1,18 +1,19 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <!-- <div class="dropdown-divider"></div> -->
 
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" [routerLink]="['home']">
         <img src="../assets/img/Logo_MV_84X84-compressor.png" width="30" height="30" class="d-inline-block align-top" alt="">
     </a>
-    <a class="navbar-brand " href="#">
-        <mat-icon matBadge="3" matBadgeColor="warn">account_box</mat-icon>
+    <a class="navbar-brand " [routerLink]="['perfil']">
+        <mat-icon>account_box</mat-icon>
     </a>
 
-    <a class="navbar-brand " href="#">
+    <a class="navbar-brand " [routerLink]="['notificacion']">
         <mat-icon matBadge="15" matBadgeColor="warn">ballot</mat-icon>
     </a>
 
-    <a class="navbar-brand " href="#">
-        <mat-icon matBadge="12" matBadgeColor="warn">mail</mat-icon>
+    <a class="navbar-brand " [routerLink]="['respuesta']">
+        <mat-icon matBadge="12" matBadgeColor="warn">question_answer</mat-icon>
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,31 +22,53 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            <!-- active -->
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['home']">Inicio <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['nosotros']">Nosotros</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['mensaje']">Contáctenos</a>
+            </li>
+            <li class="nav-item dropdown" routerLinkActive="active">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Categorías
         </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Hoteles</a>
-                    <a class="dropdown-item" href="#">Restaurantes</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Transporte</a>
+                    <a class="dropdown-item" [routerLink]="['tiendas']">
+                        <img src="../assets/img/tienda.png" width="30" height="30" alt=""> Tiendas (Venta artículos) </a>
+                    <a class="dropdown-item" [routerLink]="['recreaciones']">
+                        <img src="../assets/img/centros_recreacion.jpg" width="30" height="30" alt=""> Recreación o entretenimiento</a>
+                    <a class="dropdown-item" [routerLink]="['comidasBebidas']">
+                        <img src="../assets/img/restaurantes_y_sodas.png" width="30" height="30" alt="">Comidas y bebidas</a>
+                    <a class="dropdown-item" [routerLink]="['transportes']">
+                        <img src="../assets/img/serv_transporte.png" width="30" height="30" alt="">Transporte o traslado</a>
+                    <a class="dropdown-item" [routerLink]="['profesiones']">
+                        <img src="../assets/img/serv_prof_turrialba.png" width="30" height="30" alt="">Profesión u oficio</a>
+                    <a class="dropdown-item" [routerLink]="['reparaciones']">
+                        <img src="../assets/img/mecanica_reparacion.png" width="30" height="30" alt="">Reparación o restauranción</a>
+                    <a class="dropdown-item" [routerLink]="['deportes']">
+                        <img src="../assets/img/deportes-1.png" width="30" height="30" alt="">Deporte o actividad física</a>
+                    <a class="dropdown-item" [routerLink]="['educacion']">
+                        <img src="../assets/img/educacion_cursos.png" width="30" height="30" alt="">Educación, cursos y más</a>
+                    <a class="dropdown-item" [routerLink]="['hospedaje']">
+                        <img src="../assets/img/hospedaje.png" width="30" height="30" alt="">Hospedaje</a>
+                    <a class="dropdown-item" [routerLink]="['salud']">
+                        <img src="../assets/img/salud.png" width="30" height="30" alt="">Salud</a>
+
+
                 </div>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
+            </li> -->
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <!--  <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="¿Qué desea bucar?" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-        </form>
+        </form> -->
     </div>
     <mat-progress-bar mode="indeterminate"></mat-progress-bar>
 </nav>
